@@ -40,5 +40,6 @@ class main12
         ani.makenoise(new dog());
 		ani.makenoise(new snake());
 		System.out.println("Added this line to check my code");
+		System.out.println("Added this 2nd line to check my code");
 	}
 }
