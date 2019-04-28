@@ -39,5 +39,6 @@ class main12
 		ani.makenoise(new cat());
         ani.makenoise(new dog());
 		ani.makenoise(new snake());
+		System.out.println("Added this line to check my code");
 	}
 }
