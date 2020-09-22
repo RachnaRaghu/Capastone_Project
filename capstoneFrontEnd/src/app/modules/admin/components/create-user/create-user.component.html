@@ -1,0 +1,50 @@
+<h5>
+    Create Admin User
+</h5>
+<form [formGroup]="userForm">
+    <div class="row form-group">
+        <div class="col-2">Username</div>
+        <div class="col-2">
+            <input type="text" formControlName="userName" class="form-control" />
+            <div style="font-size: 80%;color: #dc3545;" *ngIf="userForm.controls['userName'].touched && userForm.controls['userName'].hasError('required')"> Username is required
+</div>
+</div>
+</div>
+<div class="row form-group">
+    <div class="col-2">EmailId</div>
+    <div class="col-2">
+        <input type="text" formControlName="emailId" class="form-control" />
+        <div style="font-size: 80%;color: #dc3545;" *ngIf="userForm.controls['emailId'].touched && userForm.controls['emailId'].hasError('required')"> EmailId is required
+</div>
+</div>
+</div>
+
+<div class="row form-group">
+    <div class="col-2">Mobile No.</div>
+    <div class="col-2">
+        <input type="text" formControlName="mobilenumber" class="form-control" />
+        <div style="font-size: 80%;color: #dc3545;" *ngIf="userForm.controls['mobilenumber'].touched && userForm.controls['mobilenumber'].hasError('required')"> MobileNumber
+is required
+</div>
+</div>
+</div>
+
+<div class="row form-group">
+    <div class="col-2">Password</div>
+    <div class="col-2">
+        <input type="password" formControlName="password" class="form-control" />
+        <div style="font-size: 80%;color: #dc3545;" *ngIf="userForm.controls['password'].touched && userForm.controls['password'].hasError('required')"> Password is required
+</div>
+</div>
+</div>
+<div class="row form-group">
+    <div class="col-2"></div>
+    <div class="col-3">
+        <button type="button" [disabled]="userForm.invalid" class="btn btn-primary" (click)="createUser()">Submit</button>
+    </div>
+</div>
+<!-- <div class="row form-group" *ngIf="showError">
+            <div class="col-2"></div>
+            <div class="col-2" style="font-size: 80%;color: #dc3545;">Invalid credentails</div>
+        </div> -->
+</form>

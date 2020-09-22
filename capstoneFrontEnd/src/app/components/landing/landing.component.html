@@ -1,0 +1,25 @@
+<div class="h-100" style="background-color: #00ff80;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand mb-0 h1" [routerLink]="['/landing/listSurveys']">Campaign Management System</a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/landing/listSurveys']">Start Survey</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/landing/login']">Building a Survey</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/']">LogOut</a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+<div class="container-fluid" style="margin-top: 10px;">
+<router-outlet></router-outlet>
+</div>
+</div>
